@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    
+</head>
+        <link rel="stylesheet"
+		type="text/css"
+		href="loginstyles.css" /> 
+
+<body>
+
+    <header>
+        <h1>Shopping Website</h1>
+    </header>
+
+    <section>
+        <form>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+
+            <button type="button" onclick="redirectToExpenseTracker()">Login</button>
+           <div class="create-account">
+            <p>Don't have an account? <a href="create.html">Create Account</a></p>
+        </div>
+        </form>
+    </section>
+    <script>
+        function redirectToExpenseTracker() {
+            
+            window.location.href = 'expenseTracker.html';
+        }
+    </script>
+
+</body>
+</html>
